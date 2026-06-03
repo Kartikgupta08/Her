@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
 :root {
   --bg-parchment: #fdf0f4;
   --bg-parchment-soft: #fef5f8;
@@ -10,8 +12,6 @@
   --font-display: 'Libre Baskerville', Georgia, serif;
   --font-body: 'Source Sans 3', 'Trebuchet MS', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;

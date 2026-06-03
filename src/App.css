@@ -173,6 +173,10 @@
   border: 2.5px solid color-mix(in srgb, var(--brand) 70%, var(--border));
   padding: 10px;
   background: color-mix(in srgb, var(--bg-parchment-soft) 72%, white);
+  box-shadow:
+    0 0 30px 6px color-mix(in srgb, var(--brand) 25%, transparent),
+    0 0 60px 20px color-mix(in srgb, var(--brand) 12%, transparent),
+    0 0 100px 40px color-mix(in srgb, var(--brand) 6%, transparent);
 }
 
 .portrait-wrap::after {
