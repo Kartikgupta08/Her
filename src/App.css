@@ -170,13 +170,14 @@
   width: clamp(200px, 28vw, 400px);
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 2.5px solid color-mix(in srgb, var(--brand) 70%, var(--border));
+  border: 3px solid var(--brand);
   padding: 10px;
   background: color-mix(in srgb, var(--bg-parchment-soft) 72%, white);
   box-shadow:
-    0 0 30px 6px color-mix(in srgb, var(--brand) 25%, transparent),
-    0 0 60px 20px color-mix(in srgb, var(--brand) 12%, transparent),
-    0 0 100px 40px color-mix(in srgb, var(--brand) 6%, transparent);
+    0 0 12px 3px color-mix(in srgb, var(--brand) 45%, transparent),
+    0 0 35px 10px color-mix(in srgb, var(--brand) 22%, transparent),
+    0 0 70px 25px color-mix(in srgb, var(--brand) 10%, transparent),
+    0 0 120px 50px color-mix(in srgb, var(--brand) 5%, transparent);
 }
 
 .portrait-wrap::after {
@@ -256,18 +257,20 @@
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid color-mix(in srgb, var(--brand) 55%, var(--border));
+  border: 3px solid var(--brand);
   box-shadow:
-    0 8px 32px rgba(212, 70, 122, 0.12),
-    0 2px 8px rgba(212, 70, 122, 0.08);
+    0 0 12px 3px color-mix(in srgb, var(--brand) 40%, transparent),
+    0 0 35px 10px color-mix(in srgb, var(--brand) 18%, transparent),
+    0 0 70px 25px color-mix(in srgb, var(--brand) 8%, transparent);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .love-image-wrap:hover {
   transform: scale(1.04);
   box-shadow:
-    0 12px 40px rgba(212, 70, 122, 0.2),
-    0 4px 12px rgba(212, 70, 122, 0.12);
+    0 0 18px 5px color-mix(in srgb, var(--brand) 55%, transparent),
+    0 0 45px 15px color-mix(in srgb, var(--brand) 28%, transparent),
+    0 0 90px 35px color-mix(in srgb, var(--brand) 12%, transparent);
 }
 
 .love-image {
