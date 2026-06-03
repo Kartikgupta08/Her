@@ -1,0 +1,35 @@
+:root {
+  --bg-parchment: #fdf0f4;
+  --bg-parchment-soft: #fef5f8;
+  --surface: #fffafb;
+  --border: #f0d4dd;
+  --text-main: #1a1118;
+  --text-muted: #3a2832;
+  --brand: #d4467a;
+  --brand-soft: #e8a0b8;
+  --font-display: 'Libre Baskerville', Georgia, serif;
+  --font-body: 'Source Sans 3', 'Trebuchet MS', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(212, 70, 122, 0.12), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(232, 160, 184, 0.18), transparent 40%),
+    linear-gradient(165deg, var(--bg-parchment-soft), var(--bg-parchment));
+}
+
+#root {
+  min-height: 100svh;
+}
