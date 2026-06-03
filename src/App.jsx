@@ -2,6 +2,9 @@ import './App.css'
 import pam1 from '../assets/pam1.png'
 import pam2 from '../assets/pam2.png'
 import pam3 from '../assets/pam3.webp'
+import pam4 from '../assets/pam4.png'
+import pam5 from '../assets/pam5.png'
+import pam6 from '../assets/pam6.png'
 
 function App() {
   return (
@@ -58,7 +61,7 @@ function App() {
 
       <section className="love-section love-section-reverse">
         <div className="love-image-wrap">
-          <img src={pam2} alt="Pam" className="love-image" />
+          <img src={pam4} alt="Pam" className="love-image" />
         </div>
         <div className="love-text">
           <h2 className="love-heading">The One Who Made Me Smile Every Single Time</h2>
@@ -79,7 +82,7 @@ function App() {
 
       <section className="love-section">
         <div className="love-image-wrap">
-          <img src={pam1} alt="Pam" className="love-image" />
+          <img src={pam5} alt="Pam" className="love-image" />
         </div>
         <div className="love-text">
           <h2 className="love-heading">The Reason I Believed in Forever</h2>
@@ -100,7 +103,7 @@ function App() {
 
       <section className="love-section love-section-reverse">
         <div className="love-image-wrap">
-          <img src={pam2} alt="Pam" className="love-image" />
+          <img src={pam6} alt="Pam" className="love-image" />
         </div>
         <div className="love-text">
           <h2 className="love-heading">The Girl Who Stole My Heart and Kept It Safe</h2>
