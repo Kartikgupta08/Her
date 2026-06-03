@@ -9,6 +9,14 @@ import pam6 from '../assets/pam6.png'
 function App() {
   return (
     <main className="page-shell">
+      <div className="floating-hearts-bg" aria-hidden="true">
+        <div className="heart heart-1">💖</div>
+        <div className="heart heart-2">💕</div>
+        <div className="heart heart-3">💗</div>
+        <div className="heart heart-4">✨</div>
+        <div className="heart heart-5">🌸</div>
+        <div className="heart heart-6">🤍</div>
+      </div>
       <section className="hero-layout">
         <div className="hero-text">
           <h1 className="brand-mark">
