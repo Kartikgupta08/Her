@@ -6,6 +6,30 @@
   padding: 108px 220px 0 220px;
 }
 
+.big-background-heart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 900px;
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.04;
+  animation: giantPulse 8s ease-in-out infinite;
+}
+
+.big-background-heart svg {
+  width: 100%;
+  height: auto;
+  fill: var(--brand);
+}
+
+@keyframes giantPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.03); }
+}
+
 .floating-hearts-bg {
   position: fixed;
   top: 0;
@@ -19,38 +43,39 @@
 
 .floating-hearts-bg .heart {
   position: absolute;
-  bottom: -10%;
+  top: 0;
   opacity: 0;
-  animation: floatUp 10s infinite linear;
+  animation: driftDown 14s infinite linear;
   font-size: 2rem;
   filter: drop-shadow(0 0 10px rgba(212, 70, 122, 0.4));
 }
 
-.heart-1 { left: 10%; animation-duration: 12s; animation-delay: 0s; font-size: 1.5rem; }
-.heart-2 { left: 30%; animation-duration: 15s; animation-delay: 2s; font-size: 2.5rem; }
-.heart-3 { left: 50%; animation-duration: 10s; animation-delay: 4s; font-size: 1.8rem; }
-.heart-4 { left: 70%; animation-duration: 14s; animation-delay: 1s; font-size: 2.2rem; }
-.heart-5 { left: 85%; animation-duration: 11s; animation-delay: 3s; font-size: 1.6rem; }
-.heart-6 { left: 20%; animation-duration: 13s; animation-delay: 5s; font-size: 2rem; }
+.heart-1 { left: 10%; animation-duration: 14s; animation-delay: 0s; font-size: 1.5rem; }
+.heart-2 { left: 30%; animation-duration: 18s; animation-delay: 2s; font-size: 2.5rem; }
+.heart-3 { left: 50%; animation-duration: 12s; animation-delay: 4s; font-size: 1.8rem; }
+.heart-4 { left: 70%; animation-duration: 16s; animation-delay: 1s; font-size: 2.2rem; }
+.heart-5 { left: 85%; animation-duration: 15s; animation-delay: 3s; font-size: 1.6rem; }
+.heart-6 { left: 20%; animation-duration: 17s; animation-delay: 5s; font-size: 2rem; }
 
-@keyframes floatUp {
+@keyframes driftDown {
   0% {
-    bottom: -10%;
-    transform: translateX(0) rotate(0deg);
+    transform: translate(0, -10vh) rotate(-15deg);
     opacity: 0;
   }
-  10% {
-    opacity: 0.5;
+  15% {
+    opacity: 0.65;
   }
-  50% {
-    transform: translateX(20px) rotate(20deg);
+  33% {
+    transform: translate(35px, 33vh) rotate(15deg);
   }
-  90% {
-    opacity: 0.5;
+  66% {
+    transform: translate(-25px, 66vh) rotate(-10deg);
+  }
+  85% {
+    opacity: 0.65;
   }
   100% {
-    bottom: 110%;
-    transform: translateX(-20px) rotate(-20deg);
+    transform: translate(15px, 110vh) rotate(15deg);
     opacity: 0;
   }
 }
