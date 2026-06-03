@@ -6,6 +6,8 @@
   padding: 108px 220px 0 220px;
 }
 
+
+
 .big-background-heart {
   position: fixed;
   top: 50%;
@@ -15,7 +17,7 @@
   max-width: 900px;
   z-index: -2;
   pointer-events: none;
-  opacity: 0.04;
+  opacity: 0.15;
   animation: giantPulse 8s ease-in-out infinite;
 }
 
